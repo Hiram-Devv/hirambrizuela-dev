@@ -1,4 +1,7 @@
 ---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Section from "../components/Section.astro";
 import ThemeToggle from "../components/ThemeToggle";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
@@ -6,20 +9,45 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Hiram Brizuela · Software Engineer">
-	<main class="mx-auto max-w-2xl px-6 py-24">
-		<div class="flex justify-end mb-12">
-			<ThemeToggle client:load/>
-		</div>
-		<p class="text-sm text-muted mb-4">Software Engineer</p>
+	<Header />
 
-		<h1 class="font-serif text-5xl leading-tight mb-6">
-			Hola, soy <em class="text-accent not-italic">Hiram</em>.
-		</h1>
-		<p class="text-lg text-muted leading-relaxed">
-      Construyo interfaces web rápidas y mantenibles con React, Next.js y
-      TypeScript. Egresado de Ingeniería en Software por la Universidad de
-      Colima y certificado por AWS.
-    </p>
+	<main >
+		<section class="mx-auto max-w-3xl px-6 pt-20 pb-24 sm:pt-32 sm:pb-32">
+			<p class="text-sm text-muted mb-4">Software Engineer</p>
+
+      <h1 class="font-serif text-5xl sm:text-6xl leading-[1.05] tracking-tight mb-8">
+        Hola, soy <em class="text-accent not-italic">Hiram</em>.<br />
+        Construyo interfaces<br />
+        rápidas y mantenibles.
+      </h1>
+
+      <p class="text-lg text-muted leading-relaxed max-w-xl">
+        Egresado de Ingeniería en Software por la Universidad de Colima y
+        certificado por AWS. Trabajo profesionalmente con React, Next.js y
+        TypeScript.
+      </p>
+    </section>
+
+	 <!-- Placeholder de secciones (las llenamos después) -->
+    <Section id="sobre-mi" number="01" title="Sobre mí">
+      <p class="text-muted">Contenido próximamente...</p>
+    </Section>
+
+    <Section id="proyectos" number="02" title="Proyectos">
+      <p class="text-muted">Contenido próximamente...</p>
+    </Section>
+
+    <Section id="stack" number="03" title="Stack">
+      <p class="text-muted">Contenido próximamente...</p>
+    </Section>
+
+    <Section id="contacto" number="04" title="Contacto">
+      <p class="text-muted">Contenido próximamente...</p>
+    </Section>
+		
+		
 	</main>
+
+	<Footer />
 
 </BaseLayout>
