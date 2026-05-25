@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+
+interface Props {
+    title: string;
+    description?: string
+}
+const {
+  title,
+  description = "Hiram Brizuela · Software Engineer especializado en frontend con React, Next.js y TypeScript.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+
+   <script is:inline>
+      (function () {
+        const stored = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = stored ?? (prefersDark ? "dark" : "light");
+        if (theme === "dark") {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-bg text-ink font-sans antialiased">
+    <slot />
+  </body>
+</html>

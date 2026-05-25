@@ -1,17 +1,25 @@
 ---
+import ThemeToggle from "../components/ThemeToggle";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Hiram Brizuela · Software Engineer">
+	<main class="mx-auto max-w-2xl px-6 py-24">
+		<div class="flex justify-end mb-12">
+			<ThemeToggle client:load/>
+		</div>
+		<p class="text-sm text-muted mb-4">Software Engineer</p>
+
+		<h1 class="font-serif text-5xl leading-tight mb-6">
+			Hola, soy <em class="text-accent not-italic">Hiram</em>.
+		</h1>
+		<p class="text-lg text-muted leading-relaxed">
+      Construyo interfaces web rápidas y mantenibles con React, Next.js y
+      TypeScript. Egresado de Ingeniería en Software por la Universidad de
+      Colima y certificado por AWS.
+    </p>
+	</main>
+
+</BaseLayout>

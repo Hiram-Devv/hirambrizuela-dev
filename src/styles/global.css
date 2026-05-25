@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+@import "@fontsource-variable/inter";
+@import "@fontsource/instrument-serif";
+
+/* Activa dark mode basado en la clase .dark en el <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Las variables del tema apuntan a otras variables CSS dinámicas */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-ink: var(--ink);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+
+  /* Tipografías (estas no cambian entre temas) */
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+}
+
+/* Tema light: valores por defecto */
+:root {
+  --bg: #fafaf7;
+  --surface: #efeee9;
+  --muted: #888780;
+  --ink: #1a1a19;
+  --accent: #3b6be8;
+  --border: #e5e5e0;
+  color-scheme: light;
+}
+
+/* Tema dark: sobreescribe cuando hay .dark en el <html> */
+.dark {
+  --bg: #0f0f0e;
+  --surface: #1a1a18;
+  --muted: #8a8a82;
+  --ink: #f5f4ee;
+  --accent: #6b92ff;
+  --border: #2a2a28;
+  color-scheme: dark;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
