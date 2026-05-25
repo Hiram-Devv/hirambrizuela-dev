@@ -2,7 +2,8 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Section from "../components/Section.astro";
-import ThemeToggle from "../components/ThemeToggle";
+import ProjectCard from "../components/ProjectCard.astro";
+import {projects} from "../lib/projects";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 
@@ -30,11 +31,36 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 	 <!-- Placeholder de secciones (las llenamos después) -->
     <Section id="sobre-mi" number="01" title="Sobre mí">
-      <p class="text-muted">Contenido próximamente...</p>
+      <div class="space-y-5 text-base leading-relaxed">
+    <p>
+      Llegué al desarrollo por influencia de un familiar dev y por una
+      fascinación temprana con la tecnología. Estudié Ingeniería en Software
+      en la Universidad de Colima.
+    </p>
+    <p>
+      Desde principios de 2025 trabajo profesionalmente en frontend 
+	  (<a
+      
+        href="https://michelada.io"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-accent hover:underline">Michelada.io</a
+      >, ahora <span class="text-ink">MXMart</span>), construyendo interfaces
+      con Next.js, TypeScript y stacks modernos. Soy de entendimiento visual:
+      por eso me apasiona ver una interacción funcionando bien, una animación
+      que se siente justa, una página que carga rápido.
+    </p>
+    <p>
+      Mi próximo paso: expandirme hacia backend con NestJS y explorar IA.
+      Fuera del código, soy fanático del fútbol.
+    </p>
+  </div>
     </Section>
 
     <Section id="proyectos" number="02" title="Proyectos">
-      <p class="text-muted">Contenido próximamente...</p>
+     <div>
+		{projects.map((project) => <ProjectCard project={project}/>)}
+	 </div>
     </Section>
 
     <Section id="stack" number="03" title="Stack">
