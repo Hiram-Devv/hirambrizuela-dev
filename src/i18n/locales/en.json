@@ -10,18 +10,30 @@
   "hero": {
     "role": "Software Engineer",
     "greeting": "Hi, I'm",
-    "heading2": "I build fast,",
-    "heading3": "maintainable web interfaces.",
-    "subtitle": "Software Engineering graduate from Universidad de Colima and AWS certified. I work professionally with React, Next.js and TypeScript."
+    "tagline1": "I build web products",
+    "tagline2": "that feel good to use.",
+    "subtitle": "Frontend Engineer with 1.5 years in production. I work with React, Next.js and TypeScript at MXMart, AWS certified and looking for the next technical challenge."
   },
   "about": {
     "number": "01",
     "title": "About",
-    "p1": "I came to development through the influence of a family member who is also a dev, and an early fascination with technology. I studied Software Engineering at Universidad de Colima.",
-    "p2Before": "Since early 2025 I have been working professionally in frontend (",
-    "p2Middle": ", now ",
-    "p2After": "), building interfaces with Next.js, TypeScript and modern stacks. I'm a visual thinker: that's why I love seeing an interaction work as it should, an animation that feels just right, a page that loads fast.",
-    "p3": "My next step: expanding into backend with NestJS and exploring AI. Outside of code, I'm a football fan."
+    "p1Before": "I'm ",
+    "p1Name": "Hiram Brizuela",
+    "p1Middle": ", a Software Engineer who graduated from Universidad de Colima. I've been working professionally in frontend since early 2025: I started at ",
+    "p1Company1": "Michelada.io",
+    "p1Middle2": " building scheduling systems with Next.js and Chakra UI, and I'm currently at ",
+    "p1Company2": "MXMart",
+    "p1After": " working with modern stacks like TanStack Query, Zod and shadcn/ui.",
+    "p2Before": "I care about building products where technical details translate into good experience: ",
+    "p2Accent": "performance, accessibility and architecture that can grow without breaking",
+    "p2After": ". I've worked on full-stack projects with Supabase and Firebase, and I handle UI-to-API integration well.",
+    "p3Before": "Right now I'm ",
+    "p3Highlight1": "expanding into backend",
+    "p3Middle1": " with NestJS, ",
+    "p3Highlight2": "exploring applied AI",
+    "p3Middle2": " in real products, and going deeper into cloud architecture (this site is deployed on AWS with serverless services). I care about staying current with the technologies that move today's ecosystem — not for hype, but because ",
+    "p3Highlight3": "technical curiosity",
+    "p3After": " is what keeps me doing this."
   },
   "projects": {
     "number": "02",

@@ -17,36 +17,35 @@ const t = useTranslations(lang);
   <Header lang={lang} />
 
   <main>
-    <!-- Hero -->
-    <section class="mx-auto max-w-3xl px-6 pt-20 pb-24 sm:pt-32 sm:pb-32">
-      <p class="text-sm text-muted mb-4">{t("hero.role")}</p>
+     <!-- Hero -->
+	<section class="mx-auto max-w-3xl px-6 pt-20 pb-24 sm:pt-32 sm:pb-32">
+  		<p class="text-sm text-muted mb-4">{t("hero.role")}</p>
 
-      <h1 class="font-serif text-5xl sm:text-6xl leading-[1.05] tracking-tight mb-8">
-        {t("hero.greeting")} <em class="text-accent not-italic">Hiram</em>.<br />
-        {t("hero.heading2")}<br />
-        {t("hero.heading3")}
-      </h1>
+  		<h1 class="font-serif text-5xl sm:text-6xl leading-[1.05] tracking-tight mb-8">
+   		 {t("hero.greeting")} <em class="text-accent not-italic">Hiram</em>.<br />
+    		{t("hero.tagline1")}<br />
+    		{t("hero.tagline2")}
+ 		 </h1>
 
-      <p class="text-lg text-muted leading-relaxed max-w-xl">
-        {t("hero.subtitle")}
-      </p>
-    </section>
+  		<p class="text-lg text-muted leading-relaxed max-w-xl">
+    		{t("hero.subtitle")}
+  		</p>
+	</section>
 
-    <Section id="sobre-mi" number={t("about.number")} title={t("about.title")}>
-      <div class="space-y-5 text-base leading-relaxed">
-        <p>{t("about.p1")}</p>
-        <p>
-          {t("about.p2Before")}
-          <a
-            href="https://michelada.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-accent hover:underline">Michelada.io</a
-          >{t("about.p2Middle")}<span class="text-ink">MXMart</span>{t("about.p2After")}
-        </p>
-        <p>{t("about.p3")}</p>
-      </div>
-    </Section>
+  <!-- Sobre mí -->
+<Section id="sobre-mi" number={t("about.number")} title={t("about.title")}>
+  <div class="space-y-6 font-reading text-justify leading-relaxed hyphens-auto [text-wrap:pretty]">
+    <p>
+      {t("about.p1Before")}<span class="text-ink font-medium">{t("about.p1Name")}</span>{t("about.p1Middle")}<span class="text-ink font-medium">{t("about.p1Company1")}</span>{t("about.p1Middle2")}<span class="text-ink font-medium">{t("about.p1Company2")}</span>{t("about.p1After")}
+    </p>
+    <p>
+      {t("about.p2Before")}<span class="text-accent">{t("about.p2Accent")}</span>{t("about.p2After")}
+    </p>
+    <p>
+      {t("about.p3Before")}<span class="text-accent">{t("about.p3Highlight1")}</span>{t("about.p3Middle1")}<span class="text-accent">{t("about.p3Highlight2")}</span>{t("about.p3Middle2")}<span class="text-accent">{t("about.p3Highlight3")}</span>{t("about.p3After")}
+    </p>
+  </div>
+</Section>
 
     <Section id="proyectos" number={t("projects.number")} title={t("projects.title")}>
       <div>

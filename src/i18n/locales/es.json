@@ -10,18 +10,30 @@
   "hero": {
     "role": "Software Engineer",
     "greeting": "Hola, soy",
-    "heading2": "Construyo interfaces",
-    "heading3": "rápidas y mantenibles.",
-    "subtitle": "Egresado de Ingeniería en Software por la Universidad de Colima y certificado por AWS. Trabajo profesionalmente con React, Next.js y TypeScript."
+    "tagline1": "Construyo productos web",
+    "tagline2": "que se sienten bien.",
+    "subtitle": "Frontend Engineer con 1.5 años en producción. Trabajo con React, Next.js y TypeScript en MXMart, certificado por AWS y buscando el siguiente reto técnico."
   },
   "about": {
     "number": "01",
     "title": "Sobre mí",
-    "p1": "Llegué al desarrollo por influencia de un familiar dev y por una fascinación temprana con la tecnología. Estudié Ingeniería en Software en la Universidad de Colima.",
-    "p2Before": "Desde principios de 2025 trabajo profesionalmente en frontend (",
-    "p2Middle": ", ahora ",
-    "p2After": "), construyendo interfaces con Next.js, TypeScript y stacks modernos. Soy de entendimiento visual: por eso me apasiona ver una interacción funcionando bien, una animación que se siente justa, una página que carga rápido.",
-    "p3": "Mi próximo paso: expandirme hacia backend con NestJS y explorar IA. Fuera del código, soy fanático del fútbol."
+    "p1Before": "Soy ",
+    "p1Name": "Hiram Brizuela",
+    "p1Middle": ", Software Engineer egresado de la Universidad de Colima. Trabajo profesionalmente en frontend desde principios de 2025: empecé en ",
+    "p1Company1": "Michelada.io",
+    "p1Middle2": " construyendo sistemas de agenda con Next.js y Chakra UI, y actualmente estoy en ",
+    "p1Company2": "MXMart",
+    "p1After": " trabajando con stacks modernos como TanStack Query, Zod y shadcn/ui.",
+    "p2Before": "Me interesa construir productos donde los detalles técnicos se traduzcan en buena experiencia: ",
+    "p2Accent": "performance, accesibilidad y arquitectura que pueda crecer sin romperse",
+    "p2After": ". He trabajado en proyectos full-stack con Supabase y Firebase, y manejo bien la integración entre UI y APIs.",
+    "p3Before": "Ahora mismo estoy ",
+    "p3Highlight1": "expandiéndome hacia backend",
+    "p3Middle1": " con NestJS, ",
+    "p3Highlight2": "explorando IA aplicada",
+    "p3Middle2": " a productos reales, y profundizando en arquitectura cloud (este sitio está desplegado en AWS con servicios serverless). Me importa estar al día con las tecnologías que mueven el ecosistema actual — no por moda, sino porque la ",
+    "p3Highlight3": "curiosidad técnica",
+    "p3After": " es lo que me mantiene haciendo esto."
   },
   "projects": {
     "number": "02",

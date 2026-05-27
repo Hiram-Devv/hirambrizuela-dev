@@ -2,6 +2,9 @@
 
 @import "@fontsource-variable/inter";
 @import "@fontsource/instrument-serif";
+@import "@fontsource-variable/newsreader";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
 
 /* Activa dark mode basado en la clase .dark en el <html> */
 @custom-variant dark (&:where(.dark, .dark *));
@@ -18,6 +21,7 @@
   /* Tipografías (estas no cambian entre temas) */
   --font-sans: "Inter Variable", system-ui, sans-serif;
   --font-serif: "Instrument Serif", Georgia, serif;
+  --font-reading: "IBM Plex Sans", system-ui, sans-serif;
 }
 
 /* Tema light: valores por defecto */
