@@ -1,34 +1,61 @@
 ---
+import { Icon } from "astro-icon/components";
 import ThemeToggle from "./ThemeToggle.tsx";
+import { useTranslations, type Lang } from "../i18n/ui";
+import { localizePath } from "../i18n/routing";
+import LangSwitcher from "./LangSwitcher.astro";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
 
 const navLinks = [
-  { href: "#sobre-mi", label: "Sobre mí" },
-  { href: "#proyectos", label: "Proyectos" },
-  { href: "#stack", label: "Stack" },
-  { href: "#contacto", label: "Contacto" },
+  { hash: "#sobre-mi", label: t("nav.about") },
+  { hash: "#proyectos", label: t("nav.projects") },
+  { hash: "#stack", label: t("nav.stack") },
+  { hash: "#contacto", label: t("nav.contact") },
 ];
+
+const homeUrl = localizePath("/", lang);
 ---
 
 <header
   id="site-header"
   class="sticky top-0 z-50 bg-bg/80 backdrop-blur-md border-b border-transparent transition-colors duration-200"
 >
-  <div class="mx-auto max-w-3xl px-6 py-4 flex items-center justify-between">
-    <a href="/" class="text-sm font-medium tracking-tight">
+  <div class="mx-auto max-w-3xl px-6 py-4 flex items-center justify-between gap-4">
+    <a href={homeUrl} class="text-sm font-medium tracking-tight shrink-0">
       hiram<span class="text-accent">.dev</span>
     </a>
 
-    <nav class="hidden sm:flex items-center gap-7 text-sm text-muted">
+    <nav class="hidden md:flex items-center gap-7 text-sm text-muted">
       {
         navLinks.map((link) => (
-          <a href={link.href} class="hover:text-ink transition-colors">
+          <a href={link.hash} class="hover:text-ink transition-colors">
             {link.label}
           </a>
         ))
       }
     </nav>
 
-    <ThemeToggle client:load />
+    <div class="flex items-center gap-2">
+      <a
+        href="/Hiram_Brizuela_CV.pdf"
+        download
+        class="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 border border-border rounded-md hover:bg-surface transition-colors"
+        aria-label={t("nav.downloadCvAria")}
+      >
+        <Icon name="simple-icons:readdotcv" class="size-3.5" aria-hidden="true" />
+        <span class="hidden sm:inline">{t("nav.downloadCv")}</span>
+      </a>
+
+      <LangSwitcher lang={lang} />
+
+      <ThemeToggle client:load />
+    </div>
   </div>
 </header>
 

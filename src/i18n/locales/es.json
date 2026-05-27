@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "stack": "Stack",
+    "contact": "Contacto",
+    "downloadCv": "CV",
+    "downloadCvAria": "Descargar CV en PDF"
+  },
+  "hero": {
+    "role": "Software Engineer",
+    "greeting": "Hola, soy",
+    "heading2": "Construyo interfaces",
+    "heading3": "rápidas y mantenibles.",
+    "subtitle": "Egresado de Ingeniería en Software por la Universidad de Colima y certificado por AWS. Trabajo profesionalmente con React, Next.js y TypeScript."
+  },
+  "about": {
+    "number": "01",
+    "title": "Sobre mí",
+    "p1": "Llegué al desarrollo por influencia de un familiar dev y por una fascinación temprana con la tecnología. Estudié Ingeniería en Software en la Universidad de Colima.",
+    "p2Before": "Desde principios de 2025 trabajo profesionalmente en frontend (",
+    "p2Middle": ", ahora ",
+    "p2After": "), construyendo interfaces con Next.js, TypeScript y stacks modernos. Soy de entendimiento visual: por eso me apasiona ver una interacción funcionando bien, una animación que se siente justa, una página que carga rápido.",
+    "p3": "Mi próximo paso: expandirme hacia backend con NestJS y explorar IA. Fuera del código, soy fanático del fútbol."
+  },
+  "projects": {
+    "number": "02",
+    "title": "Proyectos",
+    "featured": "Destacado",
+    "demo": "Demo",
+    "code": "Código"
+  },
+  "stack": {
+    "number": "03",
+    "title": "Stack",
+    "categories": {
+      "languages": "Lenguajes",
+      "frontend": "Frontend",
+      "stateData": "Estado y datos",
+      "backend": "Backend",
+      "cloudTools": "Cloud y herramientas"
+    }
+  },
+  "contact": {
+    "number": "04",
+    "title": "Contacto",
+    "heading": "¿Trabajamos juntos?",
+    "subtitle": "Siempre abierto a conversar sobre proyectos interesantes, oportunidades laborales o simplemente intercambiar ideas.",
+    "labels": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "footer": {
+    "name": "Hiram Brizuela",
+    "tagline": "Hecho con Astro · Desplegado en AWS"
+  },
+  "lang": {
+    "switchTo": "English",
+    "code": "EN",
+    "current": "Español"
+  }
+}

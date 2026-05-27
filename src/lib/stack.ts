@@ -4,20 +4,20 @@ export interface StackItem {
 }
 
 export interface StackCategory {
-  name: string;
+  key: string; // nueva: clave para mapear a traducciones
   items: StackItem[];
 }
 
 export const stack: StackCategory[] = [
   {
-    name: "Lenguajes",
+    key: "languages",
     items: [
       { name: "TypeScript", icon: "simple-icons:typescript" },
       { name: "JavaScript (ES6+)", icon: "simple-icons:javascript" },
     ],
   },
   {
-    name: "Frontend",
+    key: "frontend",
     items: [
       { name: "React", icon: "simple-icons:react" },
       { name: "Next.js", icon: "simple-icons:nextdotjs" },
@@ -28,7 +28,7 @@ export const stack: StackCategory[] = [
     ],
   },
   {
-    name: "Estado y datos",
+    key: "stateData",
     items: [
       { name: "TanStack Query", icon: "simple-icons:reactquery" },
       { name: "Zustand" },
@@ -37,7 +37,7 @@ export const stack: StackCategory[] = [
     ],
   },
   {
-    name: "Backend",
+    key: "backend",
     items: [
       { name: "NestJS", icon: "simple-icons:nestjs" },
       { name: "Prisma", icon: "simple-icons:prisma" },
@@ -45,7 +45,7 @@ export const stack: StackCategory[] = [
     ],
   },
   {
-    name: "Cloud y herramientas",
+    key: "cloudTools",
     items: [
       {
         name: "AWS Cloud Practitioner",

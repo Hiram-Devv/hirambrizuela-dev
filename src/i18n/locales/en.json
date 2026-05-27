@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "stack": "Stack",
+    "contact": "Contact",
+    "downloadCv": "CV",
+    "downloadCvAria": "Download CV as PDF"
+  },
+  "hero": {
+    "role": "Software Engineer",
+    "greeting": "Hi, I'm",
+    "heading2": "I build fast,",
+    "heading3": "maintainable web interfaces.",
+    "subtitle": "Software Engineering graduate from Universidad de Colima and AWS certified. I work professionally with React, Next.js and TypeScript."
+  },
+  "about": {
+    "number": "01",
+    "title": "About",
+    "p1": "I came to development through the influence of a family member who is also a dev, and an early fascination with technology. I studied Software Engineering at Universidad de Colima.",
+    "p2Before": "Since early 2025 I have been working professionally in frontend (",
+    "p2Middle": ", now ",
+    "p2After": "), building interfaces with Next.js, TypeScript and modern stacks. I'm a visual thinker: that's why I love seeing an interaction work as it should, an animation that feels just right, a page that loads fast.",
+    "p3": "My next step: expanding into backend with NestJS and exploring AI. Outside of code, I'm a football fan."
+  },
+  "projects": {
+    "number": "02",
+    "title": "Projects",
+    "featured": "Featured",
+    "demo": "Demo",
+    "code": "Code"
+  },
+  "stack": {
+    "number": "03",
+    "title": "Stack",
+    "categories": {
+      "languages": "Languages",
+      "frontend": "Frontend",
+      "stateData": "State & Data",
+      "backend": "Backend",
+      "cloudTools": "Cloud & Tools"
+    }
+  },
+  "contact": {
+    "number": "04",
+    "title": "Contact",
+    "heading": "Let's work together?",
+    "subtitle": "Always open to discussing interesting projects, job opportunities or just exchanging ideas.",
+    "labels": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "footer": {
+    "name": "Hiram Brizuela",
+    "tagline": "Built with Astro · Deployed on AWS"
+  },
+  "lang": {
+    "switchTo": "Español",
+    "code": "ES",
+    "current": "English"
+  }
+}

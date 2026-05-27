@@ -1,0 +1,23 @@
+---
+import { useTranslations, type Lang } from "../i18n/ui";
+import { localizePath } from "../i18n/routing";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const targetLang: Lang = lang === "es" ? "en" : "es";
+const targetUrl = localizePath("/", targetLang);
+---
+
+<a
+  href={targetUrl}
+  class="inline-flex items-center justify-center size-9 text-xs font-medium border border-border rounded-md hover:bg-surface transition-colors"
+  aria-label={`Cambiar idioma a ${t("lang.switchTo")}`}
+  hreflang={targetLang}
+>
+  {targetLang.toUpperCase()}
+</a>

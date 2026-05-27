@@ -1,15 +1,15 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import Section from "../components/Section.astro";
-import ProjectCard from "../components/ProjectCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Section from "../../components/Section.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
 import { Icon } from "astro-icon/components";
-import { projects } from "../lib/projects";
-import { stack } from "../lib/stack";
-import { useTranslations } from "../i18n/ui";
+import { projects } from "../../lib/projects";
+import { stack } from "../../lib/stack";
+import { useTranslations } from "../../i18n/ui";
 
-const lang = "es";
+const lang = "en";
 const t = useTranslations(lang);
 ---
 
@@ -32,14 +32,12 @@ const t = useTranslations(lang);
       </p>
     </section>
 
-    <!-- Sobre mí -->
     <Section id="sobre-mi" number={t("about.number")} title={t("about.title")}>
       <div class="space-y-5 text-base leading-relaxed">
         <p>{t("about.p1")}</p>
         <p>
           {t("about.p2Before")}
-            <a
-
+          <a
             href="https://michelada.io"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,14 +48,12 @@ const t = useTranslations(lang);
       </div>
     </Section>
 
-    <!-- Proyectos -->
     <Section id="proyectos" number={t("projects.number")} title={t("projects.title")}>
       <div>
         {projects.map((project) => <ProjectCard project={project} lang={lang} />)}
       </div>
     </Section>
 
-    <!-- Stack -->
     <Section id="stack" number={t("stack.number")} title={t("stack.title")}>
       <div class="space-y-8">
         {
@@ -82,7 +78,6 @@ const t = useTranslations(lang);
       </div>
     </Section>
 
-    <!-- Contacto -->
     <Section id="contacto" number={t("contact.number")} title={t("contact.title")}>
       <div>
         <h2 class="font-serif text-3xl sm:text-4xl tracking-tight mb-4">
@@ -114,7 +109,6 @@ const t = useTranslations(lang);
           <li class="flex gap-4">
             <span class="text-muted w-20 shrink-0">{t("contact.labels.linkedin")}</span>
             <a
-            
               href="https://www.linkedin.com/in/hiram-avalos02"
               target="_blank"
               rel="noopener noreferrer"
