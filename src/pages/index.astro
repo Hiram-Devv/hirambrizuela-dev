@@ -4,6 +4,8 @@ import Header from "../components/Header.astro";
 import Section from "../components/Section.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import {projects} from "../lib/projects";
+import {stack} from "../lib/stack";
+import { Icon } from "astro-icon/components";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 
@@ -63,13 +65,76 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 	 </div>
     </Section>
 
-    <Section id="stack" number="03" title="Stack">
-      <p class="text-muted">Contenido próximamente...</p>
-    </Section>
+<Section id="stack" number="03" title="Stack">
+  <div class="space-y-8">
+    {
+      stack.map((category) => (
+        <div>
+          <h3 class="text-sm text-muted mb-3 font-medium">{category.name}</h3>
+          <div class="flex flex-wrap gap-2">
+            {category.items.map((item) => (
+              <span class="inline-flex items-center gap-2 text-sm bg-surface px-3 py-1.5 rounded-md">
+                {item.icon && (
+                  <Icon name={item.icon} class="size-3.5 text-ink/70" />
+                )}
+                {item.name}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Section>
 
-    <Section id="contacto" number="04" title="Contacto">
-      <p class="text-muted">Contenido próximamente...</p>
-    </Section>
+   <Section id="contacto" number="04" title="Contacto">
+  <div>
+    <h2 class="font-serif text-3xl sm:text-4xl tracking-tight mb-4">
+      ¿Trabajamos juntos?
+    </h2>
+
+    <p class="text-muted leading-relaxed mb-8 max-w-md">
+      Siempre abierto a conversar sobre proyectos interesantes, oportunidades
+      laborales o simplemente intercambiar ideas.
+    </p>
+
+    <ul class="space-y-3 text-sm">
+      <li class="flex gap-4">
+        <span class="text-muted w-20 shrink-0">Email</span>
+        <a
+          href="mailto:hiramdev02@gmail.com"
+          class="hover:text-accent transition-colors"
+        >
+          hiramdev02@gmail.com
+        </a>
+      </li>
+      <li class="flex gap-4">
+        <span class="text-muted w-20 shrink-0">GitHub</span>
+        <a
+        
+          href="https://github.com/Hiram-Devv"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-accent hover:underline"
+        >
+          github.com/Hiram-Devv ↗
+        </a>
+      </li>
+      <li class="flex gap-4">
+        <span class="text-muted w-20 shrink-0">LinkedIn</span>
+        <a
+        
+          href="https://www.linkedin.com/in/hiram-avalos02"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-accent hover:underline"
+        >
+          linkedin.com/in/hiram-avalos02 ↗
+        </a>
+      </li>
+    </ul>
+  </div>
+</Section>
 		
 		
 	</main>

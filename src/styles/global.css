@@ -52,3 +52,8 @@ html {
   background: var(--color-accent);
   color: var(--color-bg);
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
