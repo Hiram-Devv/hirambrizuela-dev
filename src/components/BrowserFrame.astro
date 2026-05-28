@@ -1,0 +1,41 @@
+---
+interface Props {
+    src: string;
+    alt: string;
+    href?: string;
+}
+
+const { src, alt, href } = Astro.props
+---
+
+<div class="browser-frame rounded-lg overflow-hidden border border-border bg-surface">
+  <!-- Barra superior tipo navegador -->
+  <div class="flex items-center gap-1.5 px-3 py-2.5 border-b border-border bg-bg/50">
+    <span class="size-2.5 rounded-full bg-muted/40"></span>
+    <span class="size-2.5 rounded-full bg-muted/40"></span>
+    <span class="size-2.5 rounded-full bg-muted/40"></span>
+  </div>
+
+  <!-- La imagen -->
+  {
+    href ? (
+      <a href={href} target="_blank" rel="noopener noreferrer" class="block">
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          decoding="async"
+          class="w-full h-auto block hover:opacity-95 transition-opacity"
+        />
+      </a>
+    ) : (
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        decoding="async"
+        class="w-full h-auto block"
+      />
+    )
+  }
+</div>

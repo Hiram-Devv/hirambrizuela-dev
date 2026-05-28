@@ -10,8 +10,9 @@
   "hero": {
     "role": "Software Engineer",
     "greeting": "Hi, I'm",
-    "tagline1": "I build web products",
-    "tagline2": "that feel good to use.",
+    "tagline1": "I build modern digital products",
+    "tagline2": "focused on performance,",
+    "tagline3": "scalability and usability.",
     "subtitle": "Frontend Engineer with 1.5 years in production. I work with React, Next.js and TypeScript at MXMart, AWS certified and looking for the next technical challenge."
   },
   "about": {

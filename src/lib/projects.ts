@@ -15,6 +15,7 @@ export interface Project {
     repo?: string;
   };
   featured?: boolean;
+  image?: string;
 }
 
 export const projects: Project[] = [
@@ -32,9 +33,10 @@ export const projects: Project[] = [
       { name: "Tailwind CSS", icon: "simple-icons:tailwindcss" },
     ],
     links: {
-      demo: "https://hi-community-league.vercel.app/",
+      demo: "https://community-league-git-dev-hiram-devvs-projects.vercel.app/",
     },
     featured: true,
+    image: "/projects/hi-community-league.jpg",
   },
   {
     slug: "elegangster-barber-studio",
@@ -53,6 +55,7 @@ export const projects: Project[] = [
       demo: "https://www.elegangsterbarberstudio.com/",
       repo: "https://github.com/mindticas/mindticas2025-front",
     },
+    image: "/projects/elegangster-barber-studio.jpg",
   },
   {
     slug: "colmap",
@@ -71,6 +74,7 @@ export const projects: Project[] = [
       demo: "https://oohyeahmedia.com/",
       repo: "https://github.com/diegoavalosx/colmap",
     },
+    image: "/projects/colmap.jpg",
   },
   {
     slug: "notas-nestjs",
@@ -85,6 +89,9 @@ export const projects: Project[] = [
       { name: "PostgreSQL", icon: "simple-icons:postgresql" },
       { name: "React", icon: "simple-icons:react" },
     ],
-    links: {},
+    links: {
+      demo: "https://brizuela-avalos-8f183e-frontend.vercel.app/",
+    },
+    image: "/projects/notas-nestjs.jpg",
   },
 ];

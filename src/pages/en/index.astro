@@ -22,10 +22,11 @@ const t = useTranslations(lang);
   		<p class="text-sm text-muted mb-4">{t("hero.role")}</p>
 
   		<h1 class="font-serif text-5xl sm:text-6xl leading-[1.05] tracking-tight mb-8">
-   		 {t("hero.greeting")} <em class="text-accent not-italic">Hiram</em>.<br />
-    		{t("hero.tagline1")}<br />
-    		{t("hero.tagline2")}
- 		 </h1>
+      {t("hero.greeting")} <em class="text-accent not-italic">Hiram</em>.<br />
+      <span class="text-balance">
+       {t("hero.tagline1")} {t("hero.tagline2")} {t("hero.tagline3")}
+      </span>
+      </h1>
 
   		<p class="text-lg text-muted leading-relaxed max-w-xl">
     		{t("hero.subtitle")}

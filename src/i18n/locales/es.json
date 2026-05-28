@@ -10,8 +10,9 @@
   "hero": {
     "role": "Software Engineer",
     "greeting": "Hola, soy",
-    "tagline1": "Construyo productos web",
-    "tagline2": "que se sienten bien.",
+    "tagline1": "Desarrollo productos digitales",
+    "tagline2": "modernos enfocados en rendimiento,",
+    "tagline3": "escalabilidad y usabilidad.",
     "subtitle": "Frontend Engineer con 1.5 años en producción. Trabajo con React, Next.js y TypeScript en MXMart, certificado por AWS y buscando el siguiente reto técnico."
   },
   "about": {
