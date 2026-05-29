@@ -1,43 +1,35 @@
-# Astro Starter Kit: Minimal
+# hirambrizuela.dev
 
-```sh
-pnpm create astro@latest -- --template minimal
+Personal portfolio of Hiram Brizuela, Software Engineer.
+
+Built with Astro, Tailwind CSS and TypeScript. Deployed on AWS using S3, CloudFront, Route 53 and ACM, with infrastructure defined in AWS CDK and CI/CD via GitHub Actions.
+
+## Stack
+
+- **Framework:** Astro 6 with React islands
+- **Styling:** Tailwind CSS v4
+- **Languages:** TypeScript
+- **i18n:** Native Astro i18n (ES / EN)
+- **Hosting:** AWS S3 + CloudFront
+- **DNS:** Route 53
+- **CI/CD:** GitHub Actions
+
+## Local development
+
+```bash
+pnpm install
+pnpm dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The site runs at `http://localhost:4321/`.
 
-## 🚀 Project Structure
+## Build
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+pnpm build
+pnpm preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## License
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+© 2026 Hiram Brizuela. All rights reserved.
