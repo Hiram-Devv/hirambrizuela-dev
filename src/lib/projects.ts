@@ -33,7 +33,7 @@ export const projects: Project[] = [
       { name: "Tailwind CSS", icon: "simple-icons:tailwindcss" },
     ],
     links: {
-      demo: "https://community-league-git-dev-hiram-devvs-projects.vercel.app/",
+      demo: "https://hi-community-league.vercel.app/",
     },
     featured: true,
     image: "/projects/hi-community-league.jpg",
@@ -74,7 +74,7 @@ export const projects: Project[] = [
       demo: "https://oohyeahmedia.com/",
       repo: "https://github.com/diegoavalosx/colmap",
     },
-    image: "/projects/colmap.jpg",
+    image: "/projects/colmap.png",
   },
   {
     slug: "notas-nestjs",
